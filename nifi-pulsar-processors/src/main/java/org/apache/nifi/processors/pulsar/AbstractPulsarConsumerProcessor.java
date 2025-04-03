@@ -325,6 +325,7 @@ public abstract class AbstractPulsarConsumerProcessor<T> extends AbstractProcess
         descriptorList.add(ASYNC_ENABLED);
         descriptorList.add(MAX_ASYNC_REQUESTS);
         descriptorList.add(ACK_TIMEOUT);
+        descriptorList.add(EXPIRE_TIME_OF_INCOMPLETE_CHUNKED_MESSAGE);
         descriptorList.add(MAX_PENDING_CHUNKED_MESSAGE);
         descriptorList.add(AUTO_ACK_OLDEST_CHUNKED_ON_QUEUE_FULL);
         descriptorList.add(MAX_PENDING_CHUNKED_MESSAGE);
