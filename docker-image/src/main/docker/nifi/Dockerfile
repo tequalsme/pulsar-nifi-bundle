@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-FROM apache/nifi:2.0.0-M1
+FROM apache/nifi:${nifi.version}
 
 #############################################################################
 # Add the custom NAR files
