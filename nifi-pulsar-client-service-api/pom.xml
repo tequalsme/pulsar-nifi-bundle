@@ -95,10 +95,9 @@
   			<version>${conscrypt-openjdk.version}</version>
 		</dependency>
 
-		<dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-             <version>${junit.version}</version>
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
             <scope>test</scope>
         </dependency>
         
