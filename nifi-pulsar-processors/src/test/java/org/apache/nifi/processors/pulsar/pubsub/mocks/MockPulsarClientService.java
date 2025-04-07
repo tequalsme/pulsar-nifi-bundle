@@ -112,10 +112,14 @@ public class MockPulsarClientService<T> extends AbstractControllerService implem
         when(mockConsumerBuilder.topic(any(String[].class))).thenReturn(mockConsumerBuilder);
         when(mockConsumerBuilder.topic(anyString())).thenReturn(mockConsumerBuilder);
         when(mockConsumerBuilder.topic(any())).thenReturn(mockConsumerBuilder);
+        when(mockConsumerBuilder.topicsPattern(anyString())).thenReturn(mockConsumerBuilder);
         when(mockConsumerBuilder.subscriptionName(anyString())).thenReturn(mockConsumerBuilder);
         when(mockConsumerBuilder.ackTimeout(anyLong(), any(TimeUnit.class))).thenReturn(mockConsumerBuilder);
         when(mockConsumerBuilder.consumerName(anyString())).thenReturn(mockConsumerBuilder);
         when(mockConsumerBuilder.cryptoFailureAction(any(ConsumerCryptoFailureAction.class))).thenReturn(mockConsumerBuilder);
+        when(mockConsumerBuilder.autoAckOldestChunkedMessageOnQueueFull(anyBoolean())).thenReturn(mockConsumerBuilder);
+        when(mockConsumerBuilder.expireTimeOfIncompleteChunkedMessage(anyLong(), any(TimeUnit.class))).thenReturn(mockConsumerBuilder);
+        when(mockConsumerBuilder.maxPendingChunkedMessage(anyInt())).thenReturn(mockConsumerBuilder);
         when(mockConsumerBuilder.priorityLevel(anyInt())).thenReturn(mockConsumerBuilder);
         when(mockConsumerBuilder.receiverQueueSize(anyInt())).thenReturn(mockConsumerBuilder);
         when(mockConsumerBuilder.subscriptionType(any(SubscriptionType.class))).thenReturn(mockConsumerBuilder);
